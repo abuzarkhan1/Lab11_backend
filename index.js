@@ -5,10 +5,6 @@ const port = 3000;
 
 app.use(cors());
 
-app.get('/', (req, res) => {
-    res.send('Hello!');
-})
-
 app.get('/api', (req, res) => {
   res.send({ message: "Hello from AWS Backend!" });
 });
